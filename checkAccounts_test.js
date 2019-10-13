@@ -10,7 +10,7 @@ Data(accounts).Scenario('Check are accounts working @accounts', (I, current) => 
     I.fillField('#usernameOrEmail', current.login);
     I.click('Continue');
     I.fillField('#password', current.password);
-    I.seeElement('.login__form > .login__form-action > button');
+    I.seeElement('.login__form-action button');
     I.click('.login__form-action button');
     I.waitInUrl('/me', 10);
     I.waitForElement('.profile-gravatar__user-display-name', 15);
