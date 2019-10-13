@@ -14,6 +14,5 @@ Data(accounts).Scenario('Check are accounts working @accounts', (I, current) => 
     I.click('.login__form-action button');
     I.waitInUrl('/me', 10);
     I.waitForElement('.profile-gravatar__user-display-name', 15);
-
     I.see(current.login, '.profile-gravatar__user-display-name');
 });
