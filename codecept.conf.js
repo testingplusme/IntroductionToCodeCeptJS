@@ -1,5 +1,5 @@
 exports.config = {
-  timeout: 10000,
+    timeout: 10000,
     tests: './*_test.js',
     output: './output',
     "helpers": {
@@ -13,12 +13,6 @@ exports.config = {
                 ],
             },
         },
-         "ResembleHelper" : {
-       "require": "codeceptjs-resemblehelper",
-       "screenshotFolder" : "./tests/output/",
-       "baseFolder": "./tests/screenshots/base/",
-       "diffFolder": "./tests/screenshots/diff/"
-     }
     },
     include: {
         I: './steps_file.js',
